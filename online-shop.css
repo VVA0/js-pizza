@@ -1,0 +1,245 @@
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  padding-block: 25px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 90px;
+  background-color: white;
+}
+.conteiner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.category__conteiner {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  font-size: 18px;
+}
+.header__left {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  font-size: 18px;
+}
+.header__logo {
+  font-weight: 800;
+  font-size: 24px;
+}
+.cart {
+  padding: 10px 15px;
+  color: white;
+  font-size: 18px;
+  border-radius: 15px;
+  background-color: rgb(255, 105, 0);
+}
+.product {
+  width: 240px;
+  height: 370px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.product__img {
+  width: 240px;
+}
+.product__name {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: left;
+  margin-top: 10px;
+}
+.product__description {
+  color: #5c6370;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.product__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.product__price {
+  font-weight: 800;
+  font-size: 20px;
+}
+.product__btn {
+  background-color: rgb(255, 240, 230);
+  color: rgb(209, 87, 0);
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 15px;
+}
+.products {
+  margin-top: 150px;
+}
+.products__conteiner {
+  display: flex;
+  gap: 45px;
+  flex-wrap: wrap;
+}
+
+.category {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.active {
+  color: rgb(209, 87, 0);
+}
+.search {
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+}
+.search__input {
+  padding: 5px 10px;
+}
+.search__btn {
+  color: white;
+  background-color: rgb(209, 87, 0);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.basket {
+  width: 25%;
+  height: 100%;
+  background-color: rgb(237, 234, 234);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 4;
+}
+.basket__wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.356);
+  display: none;
+}
+.basket__header {
+  padding: 30px 10px;
+  font-size: 30px;
+  font-weight: 800;
+}
+.basket__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: scroll;
+  height: 80%;
+}
+.basket__product {
+  background-color: white;
+  padding: 10px;
+}
+.basket__delete {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(237, 234, 234);
+}
+.basket__flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.product__image {
+  width: 80px;
+}
+.product__title {
+  font-size: 18px;
+  font-weight: 800;
+}
+.product__weight {
+  color: rgb(148, 147, 147);
+  margin-top: 5px;
+}
+.product__delete {
+  font-weight: 800;
+  font-size: 24px;
+  background: none;
+  cursor: pointer;
+}
+.basket__counter {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product__price {
+  font-size: 18px;
+  font-weight: 800;
+}
+.product__count {
+  display: flex;
+  gap: 20px;
+  background-color: rgb(237, 234, 234);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  align-items: center;
+}
+.btn__minus,
+.btn__plus {
+  font-size: 20px;
+}
+.basket__footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+}
+.basket__total {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgb(237, 234, 234);
+  font-size: 16px;
+  font-weight: 800;
+}
+.basket__order {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+.btn__order-amount {
+  color: white;
+  background-color: rgb(209, 87, 0);
+  padding: 15px 0px;
+  border-radius: 18px;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+}
+.basket__close {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translate(-10px, -50%);
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.basket-active {
+  display: block;
+}

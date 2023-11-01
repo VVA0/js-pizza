@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online-shop</title>
+    <link rel="stylesheet" href="./min.css" />
+    <link rel="stylesheet" href="./online-shop.css" />
+    <script src="./api.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="conteiner">
+        <div class="header__body">
+          <div class="header__left">
+            <h2 class="header__logo">PizzaJs</h2>
+            <div class="category__conteiner">
+              <button class="category active">Вcе</button>
+              <button class="category">Мясная</button>
+              <button class="category">Сырная</button>
+              <button class="category">Веганская</button>
+            </div>
+            <div class="sort">
+              <select class="select">
+                <option value="">По умолчанию</option>
+                <option value="desc">Цена (По убыванию)</option>
+                <option value="asc">Цена (По возрастанию)</option>
+                <option value="rate">По популярности</option>
+              </select>
+            </div>
+            <div class="search">
+              <input class="search__input" type="text" /><button
+                class="search__btn"
+              >
+                Найти
+              </button>
+            </div>
+          </div>
+          <div class="header__right">
+            <button class="cart">
+              Корзина (<span class="count__value">0</span>)
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="products">
+      <div class="conteiner">
+        <div class="products__conteiner">
+          <div class="product">
+            <div>
+              <img
+                class="product__img"
+                src="https://dodopizza-a.akamaihd.net/static/Img/Products/6390157043034f8585c64cc279edbef1_584x584.webp"
+                alt=""
+              />
+              <p class="product__name">Название</p>
+              <p class="product__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus et praesentium, reprehenderit magni dolores maiores
+                iure omnis voluptatem blanditiis eveniet est sit corporis.
+                Inventore rerum reprehenderit molestiae voluptatibus praesentium
+                nemo.
+              </p>
+            </div>
+            <div class="product__info">
+              <p class="product__price">2 ₽</p>
+              <button class="product__btn">Выбрать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="basket__wrapper">
+      <div class="basket">
+        <div class="basket__header">
+          <span class="count__value">0</span>
+          товаров на <span class="sum__value">0</span> ₽
+        </div>
+        <ul class="basket__list">
+          <!-- <li class="basket__product">
+            <div class="basket__delete">
+              <div class="basket__flex">
+                <img
+                  class="product__image"
+                  src="https://dodopizza-a.akamaihd.net/static/Img/Products/6390157043034f8585c64cc279edbef1_584x584.webp"
+                  alt=""
+                />
+                <div class="product__information">
+                  <h3 class="product__title">Название</h3>
+                  <div class="product__weight">120 г</div>
+                </div>
+              </div>
+              <button class="product__delete">x</button>
+            </div>
+            <div class="basket__counter">
+              <div class="product__price">2 ₽</div>
+              <div class="product__count">
+                <button class="btn__minus">-</button>
+                <div class="btn__count">0</div>
+                <button class="btn__plus">+</button>
+              </div>
+            </div>
+          </li> -->
+        </ul>
+        <div class="basket__footer">
+          <div class="basket__total">
+            <p class="basket__count">
+              <span class="count__value">0</span> товаров
+            </p>
+            <p class="basket__sum"><span class="sum__value">0</span> ₽</p>
+          </div>
+          <div class="basket__order">
+            <div class="basket__order-amount">Сумма заказа</div>
+            <p class="basket__sum"><span class="sum__value">0</span> ₽</p>
+          </div>
+          <button class="btn__order-amount">К оформлению заказа</button>
+        </div>
+        <div class="basket__close">х</div>
+      </div>
+    </div>
+
+    <script src="./online-shop.js"></script>
+  </body>
+</html>
