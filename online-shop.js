@@ -159,28 +159,27 @@ function renderCart() {
     sum += parseFloat(element.price) * element.count; //! достаю дробную часть (перевожу из строки в дробное число)
     count += element.count; //? Присваиваем результат к счетчику
     basketContainer.insertAdjacentHTML(
-      //? Вносим HTML разметку
-      "beforeend", //? Определяем место для верстки
+      "beforeend",
       `<li class="basket__product">
 	 <div class="basket__delete">
 		<div class="basket__flex">
 		  <img
 			 class="product__image"
-			 src=${element.image} //? Динамические данные (картинка)
+			 src=${element.image}
 			 alt=""
 		  />
 		  <div class="product__information">
-			 <h3 class="product__title">${element.name}</h3> //? Динамические данные (наименование)
-			 <div class="product__weight">${element.description}</div> //? Динамические данные (описание)
+			 <h3 class="product__title">${element.name}</h3>
+			 <div class="product__weight">${element.description}</div>
 		  </div>
 		</div>
 		<button class="product__delete">x</button>
 	 </div>
 	 <div class="basket__counter">
-		<div class="product__price">${element.price} ₽</div> //? Динамические данные (цена)
+		<div class="product__price">${element.price} ₽</div>
 		<div class="product__count">
 		  <button class="btn__minus">-</button>
-		  <div class="btn__count">${element.count}</div> //? Динамические данные (количество)
+		  <div class="btn__count">${element.count}</div>
 		  <button class="btn__plus">+</button>
 		</div>
 	 </div>
