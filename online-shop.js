@@ -92,20 +92,19 @@ function renderProducts(category, sortby, order, search) {
       data.forEach((element) => {
         //? Для каждого элемента массива
         conteiner.insertAdjacentHTML(
-          //? Добавляем в контейнере верстку
-          "beforeend", //? Указываем место
+          "beforeend",
           `<div class="product">
 			 <div>
 			 <img
 				class="product__img"
-				src=${element.image} //? Динамические данные (картинка)
+				src=${element.image} 
 				alt=""
 			 />
-			 <p class="product__name">${element.name}</p> //? Динамические данные (наименование)
-			 <p class="product__description">${element.description}</p> //? Динамические данные (описание)
+			 <p class="product__name">${element.name}</p> 
+			 <p class="product__description">${element.description}</p> 
 			 </div>
 			 <div class="product__info">
-				<p class="product__price">${element.price} ₽</p> //? Динамические данные (сумма)
+				<p class="product__price">${element.price} ₽</p>
 				<button class="product__btn">Выбрать <span class="count"></span></button>
 			 </div>
 		  </div>`
